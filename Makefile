@@ -12,7 +12,8 @@ LINK     = g++
 
 
 animals: animals.cpp
-		$(CXX) $(CXXFLAGS) $(LDFLAGS) animals.cpp -o animals
+		$(CXX) -std=c++11 animals.cpp -o animals
+
 ibutton: ibutton.cpp
 	$(CXX) $(CXXFLAGS) $(LDFLAGS) ibutton.cpp -o ibutton
 
